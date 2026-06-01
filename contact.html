@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    
+    <!-- ================= HEADER ================= -->
+  <header>
+    <a href="index.html">Home</a>
+    <h1>Courses</h1>
+    <p>Skills Training for a Better Tomorrow</p>
+  </header>
+
+<section class="contact-page">
+
+    <h1>Contact Us</h1>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Johannesburg Campus</h3>
+            <p>123 Rivonia Road</p>
+            <p>Johannesburg</p>
+            <p>2196</p>
+            <p>011 123 4567</p>
+
+            <h3>Soweto Campus</h3>
+            <p>7427 Vilakazi Street, Orlando West, Soweto Johannesburg, 1804</p>
+            <p>Soweto, Johannesburg</p>
+            <p>1804</p>
+            <p>011 123 4567</p>
+
+            <h3>Alexandra Campus</h3>
+            <p>5 3rd Avenue</p>
+            <p>Alexandra, Johannesburg</p>
+            <p>2090</p>
+            <p>011 123 4567</p>
+
+        </div>
+
+      <form class="contact-form">
+
+    <h2>Get Directions</h2>
+
+    <select id="campus" required>
+        <option value="">Select Campus</option>
+        <option value="Johannesburg">Johannesburg Campus</option>
+        <option value="Soweto">Soweto Campus</option>
+        <option value="Alexandra">Alexandra Campus</option>
+    </select>
+
+    <input type="email" placeholder="Your Email Address" required>
+
+    <button type="button" onclick="getDirections()">
+        Get Directions
+    </button>
+
+    <div class="operating-hours">
+
+    <h3>Operating Hours</h3>
+
+    <p><strong>Monday - Friday:</strong> 08:00 AM - 05:00 PM</p>
+    <p><strong>Saturday:</strong> 09:00 AM - 01:00 PM</p>
+    <p><strong>Sunday:</strong> Closed</p>
+    <p><strong>Public Holidays:</strong> Closed</p>
+
+</div>
+
+</form>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

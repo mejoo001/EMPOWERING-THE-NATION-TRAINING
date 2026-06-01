@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+  <header>
+    <a href="index.html">Home</a>
+    <h1>Courses</h1>
+    <p>Skills Training for a Better Tomorrow</p>
+  </header>
+  
+<section class="calculator">
+
+    <h1>Course Fee Calculator</h1>
+
+    <form id="quoteForm">
+
+        <input type="text" id="fullname" placeholder="Full Name" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <label>
+            <input type="checkbox" value="1500"> First Aid - R1500
+        </label>
+
+        <label>
+            <input type="checkbox" value="1500"> Sewing - R1500
+        </label>
+
+        <label>
+            <input type="checkbox" value="750"> Cooking - R750
+        </label>
+
+        <label>
+            <input type="checkbox" value="750"> Garden Maintenance - R750
+        </label>
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+    </form>
+
+    <div class="result-box">
+        <h2>Total Quote</h2>
+        <p id="total">R0</p>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,931 @@
+/* ==========================
+   GENERAL STYLING
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f9fc;
+    color: #333;
+}
+
+/* ==========================
+   MAIN TITLE
+========================== */
+
+body h1:first-of-type {
+    text-align: center;
+    color: #4d6d8f;
+    margin-top: 20px;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.image-logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6fa8dc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   NAVIGATION BAR
+========================== */
+
+header {
+    background-color: #6fa8dc;
+    padding: 15px 40px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d9eaf7;
+}
+
+/* ==========================
+   SIGN UP BUTTON
+========================== */
+
+.signup-btn {
+    background-color: white;
+    color: #6fa8dc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #d9eaf7;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 10%;
+    background: linear-gradient(
+        to right,
+        #eaf4fc,
+        #d9eaf7
+    );
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #6fa8dc;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #4d86bd;
+}
+
+.secondary {
+    background-color: #808b96;
+}
+
+.secondary:hover {
+    background-color: #6b737c;
+}
+
+/* ==========================
+   COURSE BOXES
+========================== */
+
+.course-box {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.course-box h2 {
+    color: #4d6d8f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.course-box ul {
+    list-style: none;
+}
+
+.course-box li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-box li:last-child {
+    border-bottom: none;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    background-color: #4d6d8f;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.footer-section {
+    min-width: 220px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    display: block;
+    color: #d9eaf7;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+.image-logo{
+    width: 250px;
+    height: 250px
+}
+
+/* ==========================
+   CALCULATOR PAGE
+========================== */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #eaf4fc, #d9eaf7);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Calculator Container */
+
+.calculator {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+
+.calculator h1 {
+    text-align: center;
+    color: #4d6d8f;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Form Inputs */
+
+#quoteForm input[type="text"],
+#quoteForm input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #d9eaf7;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#quoteForm input[type="text"]:focus,
+#quoteForm input[type="email"]:focus {
+    border-color: #6fa8dc;
+}
+
+/* Course Options */
+
+#quoteForm label {
+    display: block;
+    background: #f4f8fb;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+#quoteForm label:hover {
+    background: #d9eaf7;
+}
+
+#quoteForm input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Calculate Button */
+
+#quoteForm button {
+    width: 100%;
+    background: #6fa8dc;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#quoteForm button:hover {
+    background: #4d86bd;
+}
+
+/* Result Box */
+
+.result-box {
+    margin-top: 30px;
+    background: #f4f8fb;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #d9eaf7;
+}
+
+.result-box h2 {
+    color: #4d6d8f;
+    margin-bottom: 10px;
+}
+
+#total {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    .calculator {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .calculator h1 {
+        font-size: 2rem;
+    }
+
+    #total {
+        font-size: 1.6rem;
+    }
+}
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-page {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: linear-gradient(
+        to right,
+        #eaf4fc,
+        #d9eaf7
+    );
+}
+
+.contact-page h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #4d6d8f;
+    margin-bottom: 40px;
+}
+
+/* ==========================
+   CONTACT CONTAINER
+========================== */
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ==========================
+   CONTACT INFO
+========================== */
+
+.contact-info {
+    flex: 1;
+    min-width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    color: #4d6d8f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d9eaf7;
+    padding-bottom: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* ==========================
+   OPERATING HOURS
+========================== */
+
+.operating-hours {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f4f8fb;
+    border-left: 5px solid #6fa8dc;
+    border-radius: 10px;
+}
+
+.operating-hours h3 {
+    margin-bottom: 15px;
+    color: #4d6d8f;
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-form {
+    flex: 1;
+    min-width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    color: #4d6d8f;
+    margin-bottom: 20px;
+}
+
+.contact-form select,
+.contact-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #d9eaf7;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact-form select:focus,
+.contact-form input:focus {
+    border-color: #6fa8dc;
+    outline: none;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #6fa8dc;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #4d86bd;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-page h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        min-width: 100%;
+    }
+}
+
+/* ==========================
+   GLOBAL RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #eaf4fc, #d9eaf7);
+    color: #333;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #6fa8dc;
+    color: white;
+}
+
+header a {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+header a:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   COURSE SECTIONS
+========================== */
+
+.courses-container,
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* ==========================
+   GRID LAYOUT
+========================== */
+
+.courses-container,
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* ==========================
+   COURSE CARD
+========================== */
+
+.course-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Images */
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Headings */
+
+.course-card h2 {
+    color: #4d6d8f;
+    margin: 15px 0 10px;
+}
+
+/* Price */
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* Description */
+
+.description {
+    padding: 0 15px;
+    color: #555;
+    min-height: 70px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.course-card button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #6fa8dc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.course-card button:hover {
+    background: #4d86bd;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   ICON AREA (optional)
+========================== */
+
+.icon-container {
+    font-size: 2.5rem;
+    color: #6fa8dc;
+    padding: 15px;
+}
+
+/* ==========================
+   SECOND SECTION TITLE
+========================== */
+
+.container h1 {
+    text-align: center;
+    color: #4d6d8f;
+    margin-bottom: 30px;
+}
+
+/* ==========================
+   DURATION BADGE
+========================== */
+
+.duration-badge {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #4d6d8f;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .course-card img {
+        height: 180px;
+    }
+}
+
+/* ================= CART ================= */
+
+.cart-container {
+    position: fixed;
+    right: 20px;
+    top: 120px;
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.cart-container h2 {
+    color: #4d6d8f;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+#cart-items button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 6px;
+}
+
+.cart-total {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #28a745;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #808b96;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background: #6b737c;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .cart-container {
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f5f5f5; /* light grey */
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #1565c0; /* deep blue */
+}
+
+header p {
+  color: #555; /* grey text */
+}
+
+/* Registration Form */
+.registration-form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.registration-form {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1565c0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  background-color: #1565c0; /* blue */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e88e5; /* lighter blue */
+}
+
+.reset-btn {
+  background-color: #9e9e9e; /* grey */
+}
+
+.reset-btn:hover {
+  background-color: #757575; /* darker grey */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}

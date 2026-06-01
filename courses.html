@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= CART ================= -->
+<div class="cart-container">
+    <h2>Your Cart</h2>
+
+    <ul id="cart-items"></ul>
+
+    <p class="cart-total">
+        Total: R<span id="cart-total">0</span>
+    </p>
+
+    <button onclick="clearCart()" class="clear-btn">
+        Clear Cart
+    </button>
+</div>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <a href="index.html">Home</a>
+    <h1>Courses</h1>
+    <p>Skills Training for a Better Tomorrow</p>
+  </header>
+
+  <main>
+
+    <!-- ================= 6 WEEK COURSES ================= -->
+    <section class="courses-container">
+
+        <div class="duration-badge">
+        Duration: 6 Months (Approx. 24 Weeks)
+      </div>        
+
+      <div class="course-card">
+        <img src="images/Child Minding.jpg" alt="Child Minding">
+        <h2>Child Minding</h2>
+        <p class="price">R750</p>
+        <p class="description">To provide basic child and baby care.</p>
+        <button onclick="addToCart('Child Minding', 750)">Add to Cart</button>
+      </div>
+
+      <div class="course-card">
+        <img src="images/Cooking.jpg" alt="Cooking">
+        <h2>Cooking</h2>
+        <p class="price">R750</p>
+        <p class="description">To prepare and cook nutritious family meals.</p>
+        <button onclick="addToCart('Cooking', 750)">Add to Cart</button>
+      </div>
+
+      <div class="course-card">
+        <img src="images/Gardenin.jpg" alt="Garden Maintenance">
+        <h2>Garden Maintenance</h2>
+        <p class="price">R750</p>
+        <p class="description">Basic gardening skills including planting and pruning.</p>
+        <button onclick="addToCart('Garden Maintenance', 750)">Add to Cart</button>
+      </div>
+
+    </section>
+
+    <!-- ================= 6 MONTH COURSES ================= -->
+    <section class="container">
+
+      <div class="courses-grid">
+
+        <div class="course-card">
+          <img src="images/First Aid.jpg" alt="First Aid">
+          <h2>First Aid</h2>
+          <p class="price">R1500</p>
+          <p class="description">Basic life support and emergency response training.</p>
+          <button onclick="addToCart('First Aid', 1500)">Add to Cart</button>
+        </div>
+
+        <div class="course-card">
+          <img src="images/Landscaping.jpg" alt="Landscaping">
+          <h2>Landscaping</h2>
+          <p class="price">R1500</p>
+          <p class="description">Professional garden design and maintenance skills.</p>
+          <button onclick="addToCart('Landscaping', 1500)">Add to Cart</button>
+        </div>
+
+        <div class="course-card">
+          <img src="images/Sewing.jpg" alt="Sewing">
+          <h2>Sewing</h2>
+          <p class="price">R1500</p>
+          <p class="description">Garment making, alterations, and tailoring skills.</p>
+          <button onclick="addToCart('Sewing', 1500)">Add to Cart</button>
+        </div>
+
+        <div class="course-card">
+          <img src="images/Life Skills.jpg" alt="Life Skills">
+          <h2>Life Skills</h2>
+          <p class="price">R1500</p>
+          <p class="description">Communication, work readiness, and personal development.</p>
+          <button onclick="addToCart('Life Skills', 1500)">Add to Cart</button>
+        </div>
+
+      </div>
+
+      <div class="duration-badge">
+        Duration: 6 Months (Approx. 24 Weeks)
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

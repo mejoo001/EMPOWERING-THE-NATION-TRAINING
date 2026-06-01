@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <a href="index.html">Home</a>
+    <h1>Course Registration</h1>
+    <p>Skills Training for a Better Tomorrow</p>
+  </header>
+
+  <!-- ================= FORM ================= -->
+  <form class="registration-form">
+    <h2>Register for a Course</h2>
+    <ul>
+      <li>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </li>
+      <li>
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+      </li>
+      <li>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </li>
+      <li>
+        <label for="address">Physical Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your physical address" required></textarea>
+      </li>
+      <li>
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+          <option value="">-- Choose a Course --</option>
+          <option value="First Aid">First Aid</option>
+          <option value="Sewing">Sewing</option>
+          <option value="Landscaping">Landscaping</option>
+          <option value="Life Skills">Life Skills</option>
+          <option value="Child Minding">Child Minding</option>
+          <option value="Cooking">Cooking</option>
+          <option value="Garden Maintenance">Garden Maintenance</option>
+        </select>
+      </li>
+      <li>
+        <div class="button-group">
+          <button type="submit">Submit Registration</button>
+          <button type="reset" class="reset-btn">Clear Form</button>
+        </div>
+      </li>
+    </ul>
+  </form>
+
+</body>
+</html>
